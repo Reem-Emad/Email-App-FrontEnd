@@ -12,6 +12,10 @@
 }
 .filter_btn:hover
 {
-    background-color: rgb(148, 39, 43);
-    border-color: rgb(148, 39, 43);
+    background-color: #FFAC00;
+    border-color: #FFAC00; 
+}
+.filter_item
+{
+    cursor: pointer;
 }

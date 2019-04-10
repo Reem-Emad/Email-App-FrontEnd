@@ -16,3 +16,11 @@
     font-weight: bold;
     margin-left: 40%;
 }
+.loginForm_btn:hover
+{
+    background-color: #FC4349;
+    border-color: #FC4349;
+    color: white;
+    font-weight: bold;
+    margin-left: 40%;
+}

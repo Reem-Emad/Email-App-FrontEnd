@@ -10,8 +10,8 @@ class ReceivedMail extends React.PureComponent {
                     <Filters />
                     <Card className="receivedMail">
                         <Card.Body>
-                            <Card.Title>from</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">to</Card.Subtitle>
+                            <Card.Title><span>From: </span><span>t@gmail.com</span></Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">to: <span>t@gmail.com</span> </Card.Subtitle>
                             <Card.Text>
                                 email body
                                 email bod

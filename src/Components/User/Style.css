@@ -1,0 +1,21 @@
+.userAccount
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin:20px;
+}
+.inbox
+{
+    width: 70%;
+    left: 55px;
+    border: 2px solid #3C989B;
+}
+.email
+{
+    border: 1px solid #3C989B;
+}
+.email_title
+{
+    border-right: 2px solid #3C989B;
+    margin-right: 5px;
+}

@@ -1,0 +1,11 @@
+.receivedMail_page
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.receivedMail
+{
+    margin: 20px;
+    width:75%;
+}

@@ -1,0 +1,17 @@
+.filter
+{
+    width: 18rem;
+     height: 9rem;
+     border:none;
+}
+.filter_btn
+{
+    background-color: #FC4349;
+    border-color: #FC4349;
+    border-radius: 0%;
+}
+.filter_btn:hover
+{
+    background-color: rgb(148, 39, 43);
+    border-color: rgb(148, 39, 43);
+}

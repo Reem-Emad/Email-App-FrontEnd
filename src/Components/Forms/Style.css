@@ -1,0 +1,18 @@
+.loginForm
+{
+    width:30%;
+    margin: auto;
+    margin-top: 13%;
+
+    border: 2px solid white;
+    padding: 25px;
+    color:white;
+}
+.loginForm_btn
+{
+    background-color: #FFAC00;
+    border-color: #FFAC00;
+    color: #282B40;
+    font-weight: bold;
+    margin-left: 40%;
+}

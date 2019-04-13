@@ -32,14 +32,13 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={LoginForm} />
               {
-                this.state.authorized ?
-                  <Switch>
-                    <Route exact path="/sent" component={UserSent} />
-                    <Route exact path="/inbox" component={UserInbox} />
-                    <Route exact path="/mail/details/:emailId" component={ReceivedSentMail} />
-                  </Switch>
-                  :
-                  <Route exact path="/" component={LoginForm} />
+                this.state.authorized &&
+                <Switch>
+                  <Route exact path="/sent" component={UserSent} />
+                  <Route exact path="/inbox" component={UserInbox} />
+                  <Route exact path="/mail/details/:emailId" component={ReceivedSentMail} />
+                </Switch>
+
               }
             </Switch>
           </Router>

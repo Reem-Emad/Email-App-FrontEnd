@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BackEnd_URL = 'http://localhost:3000';
+const BackEnd_URL = process.env.REACT_APP_BackEnd_URL || 'http://localhost:3000';
 export const getEmailById = (mailId) => {
     return axios.post(`${BackEnd_URL}/api/messages/${mailId}`)
         .then(res => res.data);

@@ -20,21 +20,21 @@ class LoginForm extends React.PureComponent {
     handleSubmit = (addLoggedinUser) => (e) => {
 
         e.preventDefault();
-        debugger;
+        // debugger;
         const { email, password } = this.state;
         login({ email, password })
             .then(res => {
                 debugger;
                 // if (res !== 'Unauthorized') {
-                //     localStorage.setItem('userToken', res.token);
-                //     addLoggedinUser(res.profile);
-                //     this.props.history.push('/inbox');
+                localStorage.setItem('userToken', res.token);
+                addLoggedinUser(res.profile);
+                this.props.history.push('/inbox');
                 // }
                 // else {
-                //     this.setState({ errorMsg: 'Incorrect mail or password' })
+                // this.setState({ errorMsg: 'Incorrect mail or password' })
                 // }
             })
-            .catch(err => { debugger; });
+            .catch(err => { this.setState({ errorMsg: 'Incorrect mail or password' }) });
     }
     render() {
         return (
